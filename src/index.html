@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily : {
+            decor : ['Nerko One']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body style="
+  background-image: url('img/bg-grid.jpg');
+  background-size: 50%;
+  "
+  >
+  <nav class="px-8 py-4 text-white bg-green-700">
+    <div class="flex justify-between">
+      <h3 class="font-decor text-lg">Project Dana</h3>
+      <ul class="flex gap-5 font-semibold">
+        <li>Home</li>
+        <li>List</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </nav>
+  <section class="flex px-8 py-6 h-screen items-center">
+    <div class="hero text-white basis-1/2">
+      <h1 class="font-decor text-7xl">Nikmati Sepenuhnya</h1>
+      <p>Nikmati lezatnya churros dan risol mayo yang kami sajikan dengan sepenuh hati</p>
+      <div class="flex py-2 font-decor gap-2">
+        <button class="bg-yellow-300 text-green-600 px-3 py-1 rounded">Pesan Sekarang</button>
+        <button class="bg-green-400 text-green-700 px-3 py-1 rounded">Daftar Menu</button>
+      </div>
+    </div>
+    <div class="img-decor flex basis-1/2 grow-0 gap-3">
+      <div class="basis-1/2 ">
+        <!-- <img class="object-none h-48 w-full bg-[length:50%]" src="img/churros.jpg" alt="gambar churros" srcset=""> -->
+        <img class="object-cover h-48 w-full object-center" src="img/churros.jpg" alt="gambar churros" srcset="">
+        <!-- <div class=" h-48 w-full object-center " style="background-image: url(img/churros.jpg);"></div> -->
+      </div>
+      <div class="basis-1/2">
+        <!-- <img class="object-none h-48 w-full" src="img/risol-mayo.jpg" alt="gambar risol mayo" srcset=""> -->
+        <img class="object-cover h-48 w-full object-center" src="img/risol-mayo.jpg" alt="gambar churros" srcset="">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
